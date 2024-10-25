@@ -1,16 +1,7 @@
-package com.prafull.algorithms.dsaSheet.data.local
-
-
-
+package com.prafull
 data class Topic(
     val topicName: String, val topicDetails: String, val questions: List<Question>
-) {
-    fun toTopicEntity(): TopicEntity {
-        return TopicEntity(
-            topicName = topicName, topicDetails = topicDetails
-        )
-    }
-}
+)
 
 data class Question(
     val name: String,
@@ -20,14 +11,7 @@ data class Question(
     val note: String = "",
     val solutionJava: String = "",
     val solutionCpp: String = "",
-) {
-    fun toQuestionEntity(): QuestionEntity {
-        return QuestionEntity(
-            name = name, link = link, solved = solved, revision = revision, note = note
-        )
-    }
-}
-
+)
 val leetcodeDSATopics = listOf(
     Topic(
         topicName = "Learn the Basics",
