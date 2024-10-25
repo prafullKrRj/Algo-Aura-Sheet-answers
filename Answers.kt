@@ -6,9 +6,6 @@ data class Topic(
 data class Question(
     val name: String,
     val link: String,
-    val solved: Boolean = false,
-    val revision: Boolean = false,
-    val note: String = "",
     val solutionJava: String = "",
     val solutionCpp: String = "",
 )
